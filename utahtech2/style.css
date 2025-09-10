@@ -7,9 +7,13 @@ header {
    background-color: #003058;
    color: #ffffff;
    font-family: Georgia, serif;
+}
+
+header h1{
    line-height: 140%;
    padding: .5rem;
  }
+
  nav{
    background-color: #F3F3F3;
    font-weight: bold;
