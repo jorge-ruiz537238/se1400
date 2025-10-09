@@ -1,0 +1,31 @@
+nav{
+   background-color: #d41919;
+   grid-column: 2;
+   grid-row: 1;
+ }
+.hero{
+    grid-column: 2;
+    grid-row: 2;
+    background-color: yellow;
+ }
+.subhero{
+    grid-column: 2;
+    grid-row: 3;
+    background-color: orange;
+ }
+main{
+    grid-column: 2;
+    grid-row: 4;
+    background-color: lightblue;
+ }
+footer{
+    grid-column: 2;
+    grid-row: 5;
+    background-color: lightgreen;
+ }
+#wrapper {
+    display: grid;
+    grid-template-columns: 90px 3fr 90px;
+    grid-template-rows: 50px 350px 50px 350px 50px;
+    background-color: rgb(106, 2, 202);
+}
