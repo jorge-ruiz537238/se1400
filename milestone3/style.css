@@ -3,6 +3,9 @@ nav{
    grid-column: 1/4;
    grid-row: 1;
  }
+ body{
+    margin: 0;
+ }
 .hero{
     grid-column: 2;
     grid-row: 2;
@@ -25,7 +28,7 @@ footer{
  }
 #wrapper {
     display: grid;
-    grid-template-columns: 90px 3fr 90px;
+    grid-template-columns: 70px 3fr 70px;
     grid-template-rows: 50px 350px 50px 350px 50px;
     background-color: rgb(106, 2, 202);
 }
