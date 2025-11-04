@@ -48,28 +48,24 @@ header h1{
  }
 table{
     margin: 0 auto;
-    border-color: #424242;
-    border-width: 1px;
+    border: #424242 1px solid;
     width: 100%;
     border-collapse: collapse;
+}
 
-}
-tr:nth-child(odd){
-    background-color: #f3f3f3;    
-}
-td{
+td,th{
     border: 1px solid #424242;
     padding: 5px;
+}
+td{
     text-align: center;
 }
 .text{
     text-align: left;
 }
 
-th{
-    border: 1px solid #424242;
-    padding: 5px;
-    background-color: #f0f0f0;
+tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;    
 }
 
 form{
