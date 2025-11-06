@@ -1,0 +1,36 @@
+nav{
+   display:inline;
+   color: rgb(255, 255, 255);
+   background-color: #000000;
+   grid-column: 1/4;
+   grid-row: 1;
+ }
+ body{
+    margin: 0;
+ }
+.hero{
+    grid-column: 2;
+    grid-row: 2;
+    background-color: yellow;
+ }
+.subhero{
+    grid-column: 2;
+    grid-row: 3;
+    background-color: orange;
+ }
+main{
+    grid-column: 2;
+    grid-row: 4;
+    background-color: lightblue;
+ }
+footer{
+    grid-column: 2;
+    grid-row: 5;
+    background-color: lightgreen;
+ }
+#wrapper {
+    display: grid;
+    grid-template-columns: 70px 3fr 70px;
+    grid-template-rows: 50px 350px 50px 350px 50px;
+    background-color: rgb(255, 255, 255);
+}

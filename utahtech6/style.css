@@ -84,7 +84,7 @@ textarea:focus{
     outline:none;
     background-color: #f0f0f0;
 }
-#mysubmit{
+#mySubmit{
     grid-column: 2/3;
     width: 10rem;
 }
