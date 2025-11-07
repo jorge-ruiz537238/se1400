@@ -2,18 +2,21 @@ nav{
    background-color: #000000;
    grid-column: 1/4;
    grid-row: 1;
+   color:white;
    font-weight:bold;
    font-family: Arial, Helvetica, sans-serif;
-   
-   
+   display: flex;
+   flex-flow: row nowrap;
 }
+h3{
+   margin-left: 210px;
+   margin-top: 20px;
+   font-size:xx-large;
+}
+   
 #soccerSphere{
-   padding-right: 10px;
    font-weight:bold;
    font-style: italic;
-   
-      
-   
 }
 #soccer{
    background-image: url('images/soccer.png');
@@ -22,52 +25,87 @@ nav{
     background-size: contain;
     background-origin: content-box;
     width: 100%;
-   
-   
+   grid-column: 1/6;
 }
  nav ul{
-        list-style-type: none;
-        margin: 0;
-        padding-left: 20%;
-        display: flex;
-        flex-flow: row nowrap;
-}
+   list-style-type: none;
+   margin: 0;
+   padding-left: 10%;
+   display: flex;
+   margin: auto;
+   padding: 30px;
+   padding-top: 20px;
+ }
 nav ul li{
     width: 100%;
+    margin: 50px;
+    margin-top: 10px;
 }
-nav p{
-    text-decoration: none;
-    color: white;
-    padding: 1rem 0rem;
-    display: block;
-    text-align: center;
-}
+
  body{
     margin: 0;
  }
 .hero{
     grid-column: 2;
     grid-row: 2;
-    background-color: yellow;
+ }
+ #celebration{
+    background-image:url('images/Arsenal-v-Manchester-City-Premier-League-tg3lbi71.avif');
+   width: 100%;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position-y: 15%;
+   grid-column:2/4
  }
 .subhero{
-    grid-column: 2;
     grid-row: 3;
-    background-color: orange;
+    background-color: rgb(0, 0, 0);
+    grid-column: 2/4;
  }
 main{
+   grid-column: 2;
+   grid-row: 4;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+   }
+ main h1{
+    text-decoration: underline;
     grid-column: 2;
-    grid-row: 4;
-    background-color: lightblue;
+    grid-row:4;
  }
+   #poster{
+      background-image:url('images/ChatGPT\ Image\ Nov\ 6\,\ 2025\,\ 06_53_34\ PM.png');
+      background-size:100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-position-y: 40%;
+      margin-top: 20px;
+      margin-left: 50px;
+      height: 300px;
+      width: 500px;
+      border-color: #000000;
+      border-style: solid;
+      border-width: 2px;
+      grid-column:3;
+      grid-row:4;
+   }
 footer{
-    grid-column: 2;
+    grid-column: 2/4;
     grid-row: 5;
-    background-color: lightgreen;
+    background-color: #000000;
+    color: white;
+    font-size: .70rem;
+    font-style: italic;
+    text-align: center;
+    padding: 1rem;
+ }
+ footer a{
+   text-decoration: underline;
+   color: white;
  }
 #wrapper {
     display: grid;
-    grid-template-columns: 70px 3fr 70px;
-    grid-template-rows: 80px 350px 50px 350px 50px;
+    grid-template-columns: 70px 2fr 2fr 70px;
+    grid-template-rows: 80px 500px 30px 350px 50px;
     background-color: rgb(255, 255, 255);
 }
