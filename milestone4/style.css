@@ -20,6 +20,11 @@ nav h3{
 nav img{
    width: 120px
 }
+#titlebar{
+   display: flex;
+   flex-flow: row nowrap;
+   align-items: center;
+}
 
  nav a{
     text-decoration: none;
@@ -40,15 +45,17 @@ nav img{
  #celebration{
     background-image:url('images/Arsenal-v-Manchester-City-Premier-League-tg3lbi71.avif');
    width: 100%;
+   height: 500px;
    background-size: cover;
    background-repeat: no-repeat;
    background-position-y: 15%;
    grid-column:2/4
  }
 .subhero{
+    height: 30px;
     grid-row: 3;
-    background-color: rgb(0, 0, 0);
-    grid-column: 2/4;
+    background-color: black;
+    grid-column: 2 / 4;
  }
 main{
    grid-column: 2/4;
@@ -100,17 +107,15 @@ footer{
  }
 #wrapper {
     display: grid;
-    grid-template-columns: 70px 2fr 2fr 70px;
-    grid-template-rows: 80px 500px 30px auto 50px;
     background-color: rgb(221, 218, 218);
 }
 
 @media only screen and (max-width: 700px){
    nav {
       grid-column: 2/4;
-      grid-row: 2/4;
+      flex-direction: column;
    }
-   #celebration{
+   #celebration,.subhero{
       display: none;
    }
 
