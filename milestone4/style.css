@@ -1,5 +1,5 @@
 nav{
-   background-color: #000000;
+   background: linear-gradient(33deg, black, #0c0b73);
    grid-column: 1/5;
    grid-row: 1;
    color:white;
@@ -18,7 +18,7 @@ nav h3{
 }
 
 nav img{
-   width: 120px
+   width: 60px
 }
 #titlebar{
    display: flex;
@@ -108,12 +108,14 @@ footer{
 #wrapper {
     display: grid;
     background-color: rgb(221, 218, 218);
+    box-shadow: 0px 3px 3px rgba(44, 37, 37, 0.3);
 }
 
 @media only screen and (max-width: 700px){
    nav {
       grid-column: 2/4;
       flex-direction: column;
+      background:linear-gradient(180deg, black, #0c0b73);
    }
    #celebration,.subhero{
       display: none;
