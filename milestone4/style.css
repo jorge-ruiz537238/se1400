@@ -10,6 +10,10 @@ nav{
    align-items: center;
    justify-content: space-around;
 }
+nav a:hover{
+   transition: transform 0.3s ease-in-out;
+   transform: scale(1.2);
+}
 nav h3{
    font-weight:bold;
    font-style: italic;
@@ -20,6 +24,7 @@ nav h3{
 nav img{
    width: 60px
 }
+
 #titlebar{
    display: flex;
    flex-flow: row nowrap;
@@ -32,6 +37,13 @@ nav img{
     padding: 1rem 1rem;
     display: block;
     text-align: center;
+   }
+#navlinks{
+   display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+    grid-row: 2;
    }
 
 
@@ -105,22 +117,100 @@ footer{
    text-decoration: underline;
    color: white;
  }
+ .dropdown{
+   position: relative;
+   display: inline-block;
+   }
+   .dropbtn {
+  background-color: #000000;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.dropbtn:hover{
+   transition: transform 0.3s ease-in-out;
+   transform: scale(1.2);
+
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1b1b1b;
+  min-width: 230px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+  margin-top:360px;
+}
+.dropdown-content a:hover{
+   background-color: grey;
+}
+.show {
+   display:block;
+   }
 #wrapper {
     display: grid;
     background-color: rgb(221, 218, 218);
     box-shadow: 0px 3px 3px rgba(44, 37, 37, 0.3);
 }
-
+@media only screen and (max-width: 1400px){
+   .dropdown{
+      display: none;
+   }
+   .dropbtn{
+      display: none;
+   }
+}
+@media only screen and (max-width: 930px){
+   nav{
+      display: grid;
+      justify-content: normal;
+   }
+   
+   
+   #navlinks{
+      grid-row: 2;
+      grid-column: 1/5;
+      justify-content: space-evenly;
+      background-color: #000000;
+}
+.dropdown{
+   display:none
+}
+.dropbtn{
+   display:none;
+}
+}
 @media only screen and (max-width: 700px){
    nav {
       grid-column: 2/4;
       flex-direction: column;
       background:linear-gradient(180deg, black, #0c0b73);
    }
-   #celebration,.subhero{
+   #celebration{
       display: none;
    }
-
-
-
+#navlinks{
+   display:none;
+}
+.subhero{
+   grid-row:2;
+}
+#soccer{
+      display: none;
+   }
+.dropdown{
+   display:inline-block;
+   margin-left: auto;
+   margin-right: auto;
+   }
+.dropbtn{
+   display:inline-block;
+}
+nav a:hover{
+   transition: transform 0.3s ease-in-out;
+   transform: none;
+}
 }
