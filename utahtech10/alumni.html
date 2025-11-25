@@ -6,8 +6,17 @@
   <meta charset="utf-8">
   <meta name="robots" content="noindex, nofollow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script> 
+function validateForm() {
+     if (document.forms[0].myEmail.value == "" ) {
+          alert("Please enter an e-mail address.");
+          return false;
+     } // end if
+     return true;
+} // end function validateForm
+</script>
 </head>
-<body>
+<body onload="alert('Today only - 10% off on a weekend - coupon code TrailBlazers');">
 <div id="wrapper">
     <div id="bluebar"></div>
     <div id="greybar"></div>
@@ -30,16 +39,16 @@
     <h2>Join Alumni Mailing List</h2>
     <p>Required information is marked with an asterisk (*)</p>
     <h3>Request Alumni Newsletter</h3>
-    <form method="post" action="https://kearl.net/se1400/mail.php">
+    <form method="post" onsubmit="return validateForm();" action="https://kearl.net/se1400/mail.php">
     
-    <label for="myFName">* First Name:</label>
-    <input type="text" id="myFName" name="myFName" required>
+    <label for="myFName"> First Name:</label>
+    <input type="text" id="myFName" name="myFName">
 
-    <label for="myLName">* Last Name:</label>
-    <input type="text" id="myLName" name="myLName" required>
+    <label for="myLName"> Last Name:</label>
+    <input type="text" id="myLName" name="myLName">
     
     <label for="myEmail">* Email Address:</label>
-    <input type="email" id="myEmail" name="myEmail" required>
+    <input type="text" name="myEmail" id="myEmail">
 
     <label for="myPhone">Phone Number:</label>
     <input type="tel" id="myPhone" name="myPhone">
@@ -47,8 +56,8 @@
     <label for="gradDate">Graduation Date:</label>
     <input type="date" id="gradDate" name="gradDate">
 
-    <label for="myComments">* Comments:</label>
-    <textarea id="myComments" name="myComments" required rows="2" cols="20"></textarea>
+    <label for="myComments"> Comments:</label>
+    <textarea id="myComments" name="myComments" rows="2" cols="20"></textarea>
 
     <input type="submit" value="Submit">
     </form>
