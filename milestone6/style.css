@@ -82,7 +82,26 @@ nav img{
     border-width: 5px;
     border-style: solid;
  }
-
+#interview, #interview2, #interview3{
+   width: 70%;
+   height: auto;
+   float: none;
+   margin-left: 30px;
+   margin-right: 30px;
+   border-color: black;
+   border-width: 5px;
+   border-style: solid;
+}
+#transfer, #transfer2{
+   width: 60%;
+   height: auto;
+   float: none;
+   margin-left: 30px;
+   margin-right: 30px;
+   border-color: black;
+   border-width: 5px;
+   border-style: solid;
+}
 .subhero{
     height: 30px;
     grid-row: 3;
@@ -154,7 +173,7 @@ footer{
    position: relative;
    display: inline-block;
    }
-   .dropbtn {
+ .dropbtn {
   background-color: #000000;
   display: none;
   color: white;
