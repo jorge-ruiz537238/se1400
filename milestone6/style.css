@@ -136,7 +136,7 @@ main{
    grid-row: auto ;
  }
    #poster{
-    width: 400px;
+    width: 80%;
     float: right;
     margin-left: 30px;
     margin-right: 30px;
@@ -264,5 +264,8 @@ footer{
 nav a:hover{
    transition: transform 0.3s ease-in-out;
    transform: none;
+}
+#poster{
+   float: none;
 }
 }
